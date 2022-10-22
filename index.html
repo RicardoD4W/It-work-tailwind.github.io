@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="bg-slate-300 flex justify-center h-screen w-screen">
+
+    <main class="border-2 border-black mt-2 mb-2 w-2/4 bg-slate-100 h-max">
+        <div class="flex justify-center items-center mt-5">
+            <img class="rounded-full mr-12 w-20"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DdT6tFJVe-1SmAIPoNC26yymCnx7mz2XrwtsqfeR_A&s" alt="">
+            <p class="text-3xl font-bold">Default Page</p>
+        </div>
+
+        <div>
+            <title class="flex justify-center font-semibold mt-5 items-center bg-pink-600 text-white mx-1">
+            IT WORKS!
+            </title>   
+            <p class="mx-4 my-2 font-serif">
+                This is the default welcome page used to test the correct operation of the <strong>Tailwind</strong> after
+                installation on systems. It is based on the equivalent page on Debian, from which the Ubuntu
+                Apache packaging Is derived. If you can read this page, it means that the <strong>Tailwind</strong> services installed
+                at this site is working properly. You should replace this file (located at ./public/index.html)
+                before continuing to operate your <strong>Tailwind</strong>.
+                <p class="mx-4 my-2 font-serif">
+                If you are a normal user of this web site and don't know what this page is about, this probably means
+                that the site is currently unavailable due to maintenance. If the problem persists, please contact the
+                site's administrator.                    
+                </p>
+
+            </p>         
+        </div>
+
+
+        <div>
+            <title class="flex justify-center font-semibold mt-5 items-center bg-slate-400 text-white mx-1">
+            CONFIGURATION OVERVIEW
+            </title>   
+            <p class="mx-4 my-4 font-serif">
+                <strong>Tailwind</strong> default configuration is different from the upstream default configuration, and split
+                into several files optimized for interaction with <strong>Tailwind</strong> tools. The configuration system is fully
+                documented in <a href="https://tailwindcss.com/">this page</a> Refer to this for the full
+                documentation.
+                
+                The configuration layout for an <strong>Tailwind</strong> installation on systems is as follows:
+                <pre class="mx-4 border-2 border-dotted border-gray-600 mb-4">
+                ____________________________________________________________________________________
+                | -> ./public/index.html
+                | -> ./public/css/tailwind.css
+                | -> ./tailwind.css
+                | $ npm init -y
+                | $ npm install -D tailwindcss
+                | $ npx tailwindcss init
+                |
+                 \
+                  | conf tailwind.config.js > content
+                  |
+                 /
+                |
+                | In -> ./tailwind.css
+                ------------------------------|
+                |   @tailwind base;           |
+                |   @tailwind components;     |
+                |   @tailwind                 |
+                ------------------------------|
+                |
+                 \
+                  |
+                  |
+                 /
+                |   href="css/tailwind.css" rel="stylesheet"
+                |
+                |
+                | $ npx tailwindcss -i ./tailwind.css -o ./public/css/tailwind.css --watch
+                |____________________________________________________________________________________
+                </pre>
+
+            </p>         
+        </div>
+
+    </main>
+
+</body>
+
+</html>
